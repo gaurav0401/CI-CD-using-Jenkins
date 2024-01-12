@@ -34,7 +34,7 @@ docker build -t myjenkins-blueocean:2.414.2 .
 
 #IF you are having problems building the image yourself, you can pull from my registry (It is version 2.332.3-1 though, the original from the video)
 
-docker pull devopsjourney1/jenkins-blueocean:2.332.3-1 && docker tag devopsjourney1/jenkins-blueocean:2.332.3-1 myjenkins-blueocean:2.332.3-1
+docker pull jenkins/jenkins
 ```
 
 ## Create the network 'jenkins'
@@ -53,9 +53,10 @@ docker run --name jenkins-blueocean --restart=on-failure --detach `
   --env DOCKER_CERT_PATH=/certs/client --env DOCKER_TLS_VERIFY=1 `
   --volume jenkins-data:/var/jenkins_home `
   --volume jenkins-docker-certs:/certs/client:ro `
-  --publish 8080:8080 --publish 50000:50000 myjenkins-blueocean:2.414.2
+  --publish 8080:8080 --publish 50000:50000 jenkins/jenkins
 ```
 
+<p>Note:Now run run 'docker ps' you will see our jenkins container is running there on port localhost:8080</p>
 
 ## Get the Password
 ```
