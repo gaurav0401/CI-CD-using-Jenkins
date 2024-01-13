@@ -68,5 +68,20 @@ docker exec 'jenkin container name ' cat /var/jenkins_home/secrets/initialAdminP
 https://localhost:8080/
 ```
 
+
+<h3>Jenkins commands</h3>
+<ul>
+    <li><b> docker exec -it  'container name' bash :</b>used to run Jenkins workspace  in bash mode.</li>
+    <li><b>cd /var/jenkins_home :</b> used to move to the jenkin home page.</li>
+    <li><b>cd ~ :</b> go back to the home directory</li>
+</ul>
+
+
+
+<h3>python Installation in jenkins</h3>
+<ul>
+    <li>docker exec -u 0 'container name' apt update</li>
+    <li>docker exec -u 0 'container name' apt install python3-pip -y</li>
+</ul>
 ## Installation Reference:
 https://www.jenkins.io/doc/book/installing/docker/
