@@ -21,7 +21,7 @@
 
 
 <ul>
-    <li><b>Freestyle builds:</b>are the simplest method to create a build e.g creating a repository /container using shell scriptingS .</li>
+    <li><b>Freestyle builds:</b>are the simplest method to create a build.A freestyle project in Jenkins is a type of build job that allows users to automate simple tasks such as running tests, creating and packaging applications, producing reports, or executing commands .</li>
     <li><b>Pipelines:</b>are the set of automated tasks which helps in to develop and deploy software faster. </li>
 </ul>
 
