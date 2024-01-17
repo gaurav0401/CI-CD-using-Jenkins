@@ -113,5 +113,6 @@ https://www.jenkins.io/doc/book/installing/docker/
      </li>
     <li>After creating the socat container, you can go back the docker configuration in jenkins and enter
         tcp://socat-container-ip:2375</li>
+    <li><b>Note: Make sure that you have enabled CSRF Protection from global configuration.</b></li>
     <li>Test Connection should succeed now.</li>
 </ul>
