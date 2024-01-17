@@ -107,17 +107,10 @@ https://www.jenkins.io/doc/book/installing/docker/
     <li>
         <b>alpine/socat container to forward traffic from Jenkins to Docker Desktop on Host Machine</b>
         <ul>
-
             <li> docker run -d --restart=always -p 127.0.0.1:2376:2375 --network jenkins -v /var/run/docker.sock:/var/run/docker.so alpine/socat tcp-listen:2375,fork,reuseaddr unix-connect:/var/run/docker.sock</li>
-
             <li> docker inspect 'container_id' | grep IPAddress</li>
-
-        </ul>
-        
-       
-       
-       
-    </li>
+         </ul>
+     </li>
     <li>After creating the socat container, you can go back the docker configuration in jenkins and enter
         tcp://socat-container-ip:2375</li>
     <li>Test Connection should succeed now.</li>
