@@ -21,6 +21,8 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
+                cd demo
+                python3 test.py
                 echo "doing test stuff.."
                 '''
             }
