@@ -116,3 +116,14 @@ https://www.jenkins.io/doc/book/installing/docker/
     <li><b>Note: Make sure that you have enabled CSRF Protection from global configuration.</b></li>
     <li>Test Connection should succeed now.</li>
 </ul>
+
+
+<h3>Creating pipelines</h3>
+<ul>
+    <li>There 2  ways to run pipeline in Jenkins:
+        <ol>
+            <li>By writing pipeline script in pipeline configuration.</li>
+            <li>By creating seperate 'Jekinfile' and then adding that file in pipeline configuration using git.</li>
+        </ol>
+    </li>
+</ul>
